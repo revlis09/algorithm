@@ -3,7 +3,7 @@ def find_ins_sort(r, v):
     if v<r[i]:
       return i
   return len(r)
-
+  
 def ins_sort(a):
   result=[]
   while a:
@@ -11,8 +11,6 @@ def ins_sort(a):
     ins_idx=find_ins_sort(result, value)
     result.insert(ins_idx, value)
   return result
-
-
 
 d=[2, 4, 5, 1, 3]
 print(ins_sort(d))
