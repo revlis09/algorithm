@@ -2,9 +2,11 @@ def find_min_idx(a):
   n=len(a)
   min_idx=0
   for i in range(0, n):
-    if a[i]<a[min_idx]:
+    if a[min_idx]>a[i]:
       min_idx=i
   return min_idx
+
+
 
 def sel_sort(a):
   result=[]
