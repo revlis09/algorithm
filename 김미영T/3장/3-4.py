@@ -4,7 +4,6 @@ def find_min_idx(r, v):
       return i
   return len(r)
 
-
 def ins_sort(a):
   result=[]
   while a:
@@ -12,9 +11,6 @@ def ins_sort(a):
     min_idx=find_min_idx(result, value)
     result.insert(min_idx, value)
   return result
-
-
-
 
 d =[2, 4, 5, 1, 3]
 print(ins_sort(d))
