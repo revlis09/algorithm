@@ -1,22 +1,30 @@
-def sel_sort(a):
-    n=len(a)
-    for i in range(0, n):
-        min_idx=i
-        for j in range(i+1, n):
-            if a[j]>a[min_idx]:
-                min_idx=j
-        a[min_idx], a[i]=a[i], a[min_idx]
+def print_all_friends(g, v):
+  qu=[]
+  done=set()
+  qu.append(v)
+  done.add(v)
+  while qu:
+    a=qu.pop()
+    print(a)
+    for x in g[a]:
+      if x not in(done):
+        qu.append(x)
+        done.add(x)
 
 
-def sel_sort(a):
-  n= len(a)
-  for i in range(0, n):
-      min_idx=i
-      for j in range(i+1, n):
-          if a[j]<a[min_idx]:
-              min_idx=j
-      a[min_idx], a[i]=a[i], a[min_idx]
 
-d = [2, 4, 5, 1, 3]
-sel_sort(d)
-print(d)
+
+fr_info = {
+    'Summer': ['John', 'Justin', 'Mike'],
+    'John': ['Summer', 'Justin'],
+    'Justin': ['John', 'Summer', 'Mike', 'May'],
+    'Mike': ['Summer', 'Justin'],
+    'May': ['Justin', 'Kim'],
+    'Kim': ['May'],
+    'Tom': ['Jerry'],
+    'Jerry': ['Tom']
+}
+
+print_all_friends(fr_info, 'Summer')
+print()
+print_all_friends(fr_info, 'Jerry')
