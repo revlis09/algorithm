@@ -1,8 +1,8 @@
 n=int(input())
 count=0
 a=[]
-while count<=4:
-  n=int(input())
+while count<=n+1:
+  n_1=int(input())
   a.append(n)
   count+=1
 
@@ -17,6 +17,4 @@ for i in range(na):
 
 
 for i in a:
-  print(i)    
-
-
+  print(i) 

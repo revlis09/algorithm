@@ -5,7 +5,7 @@ def quick_sort(a):
   pivot=a[-1]
   g1=[]
   g2=[]
-  for i in range(n-1):
+  for i in range(n-1): # pivot을 설정해두었기 떄문
     if a[i]<pivot:
       g1.append(a[i])
     else:

@@ -5,4 +5,7 @@ for i in range(n):
   a.append(x)
 
 for i in a:
-  print(i)
+  y=len(i)
+  for j in range(i):
+    if j==0:
+      j=int(j)
