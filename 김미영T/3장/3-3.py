@@ -9,4 +9,4 @@ def sel_sort(a):
 
 d = [2, 4, 5, 1, 3]
 sel_sort(d)
-print(d)
+print*d
